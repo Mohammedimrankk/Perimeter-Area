@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<windows.h>
+int main(){
+    float Perimeter,Area;
+    
+    float length;
+    printf("Enter the length in inches(0 to 11) = ");
+    scanf("%f",&length);
+
+    float width;
+    printf("Enter the width in inches(0 to 11) = ");
+    scanf("%f",&width);
+    if(length>11 & width>11){
+    printf("Wrong length and width entered!\n");
+    exit (0);
+    }
+    else if (length>11)
+    {
+    printf("Wrong length entered!\n");
+    exit (0);
+    }
+    else if (width>11){
+    printf("Wrong width entered!\n");
+    exit(0);
+    }
+    else{
+    printf("Right values enterd.\n");
+    }
+
+    Perimeter = 2 * (length+width);
+    printf("Perimeter = %0.2f inches.\n",Perimeter);
+
+    Area = length * width;
+    printf("Area = %0.2f sqr inches.\n",Area);
+
+    return 0;
+}
